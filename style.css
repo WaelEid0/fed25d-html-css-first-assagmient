@@ -3,65 +3,87 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 
 body {
-  background: #f4f7ff; /* Ljus blåaktig bakgrund */
+  background: #f4f7ff;
   color: #333;
   line-height: 1.6;
   padding: 20px;
+  max-width: 800px; 
+  margin: 0 auto;   
 }
 
 /* Header */
 header {
-  background: #ffcb05; /* Pokémon-gul */
-  padding: 20px;
+  background: #ffcb05; 
+  padding: 30px 20px;
   text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-bottom: 5px solid #2a75bb; 
 }
 
 header h1 {
-  color: #2a75bb; /* Pokémon-blå */
+  color: #2a75bb;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 /* Rubriker */
 h2 {
-  font-size: 22px;
-  font-weight: bold;
+  font-size: 24px;
   color: #2a75bb;
-  margin-top: 20px;
-  text-align: center; /* Centerar texten */
+  margin: 30px 0 15px;
+  text-align: center;
+}
+
+
+p {
+  margin-bottom: 15px;
+  text-align: justify; 
 }
 
 /* Bilder */
 img {
   display: block;
-  margin: 20px auto;
-  max-width: 300px;
-  border: 4px solid #2a75bb;
-  border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  margin: 25px auto;
+  max-width: 100%; 
+  width: 300px;   
+  height: auto;
+  border: 5px solid #2a75bb;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease; 
+}
+
+img:hover {
+  transform: scale(1.05); 
 }
 
 /* Länkar */
+.link-container { text-align: center; margin-top: 20px; } 
+
 a {
   color: #2a75bb;
   font-weight: bold;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
+  color: #ffcb05; 
   text-decoration: underline;
 }
 
 /* Footer */
 footer {
-  margin-top: 40px;
+  margin-top: 50px;
   text-align: center;
   background: #2a75bb;
   color: white;
-  padding: 15px;
-  border-radius: 10px;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 0.9em;
 }
